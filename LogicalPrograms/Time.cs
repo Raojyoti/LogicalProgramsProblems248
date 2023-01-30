@@ -9,7 +9,7 @@ namespace LogicalPrograms
 {
     public class Time
     {
-        public static int i;
+        //8.Measure the elapsed time between start and end
         public static void FindElapsedTime()
         {
             Stopwatch stopwatch = Stopwatch.StartNew();
