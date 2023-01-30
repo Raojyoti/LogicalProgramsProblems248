@@ -8,7 +8,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Welcome to the Logical Programs\n------------------------------------");
             Console.WriteLine("Please select any option");
-            Console.WriteLine("1.FindFibonacciSeries\n2.CheckPerfectNumber\n3.CheckPrimeNumber\n4.ReverseNumber\n13.Exit\n");
+            Console.WriteLine("1.FindFibonacciSeries\n2.CheckPerfectNumber\n3.CheckPrimeNumber\n4.ReverseNumber\n5.TemperaturConversion\n13.Exit\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -27,6 +27,11 @@ namespace LogicalPrograms
                 case 4:
                     Console.Clear();
                     ReverseNumber.FindReverseNumber();
+                    break;
+                case 5:
+                    Console.Clear();
+                    TemperatureConversion.TemperaturConversionToFahrenheit();
+                    TemperatureConversion.TemperaturConversionToCelsius();
                     break;
                 case 13:
                     Console.Clear();
