@@ -19,13 +19,13 @@ namespace LogicalPrograms
             int i = 0;
             while (number > 0)
             {
-                binaryNum[i] = number % 2;
+                binaryNum[i] = number % 2;//1000
                 number = number / 2;
                 i++;
             }
             for (int j = i - 1; j >= 0; j--)
             {
-                Console.Write(binaryNum[j]);
+                Console.Write(binaryNum[j]);//1
             }
         }
     }

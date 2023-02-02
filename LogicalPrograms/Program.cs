@@ -8,7 +8,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Welcome to the Logical Programs\n------------------------------------");
             Console.WriteLine("Please select any option");
-            Console.WriteLine("1.FindFibonacciSeries\n2.CheckPerfectNumber\n3.CheckPrimeNumber\n4.ReverseNumber\n5.TemperaturConversion\n6.GregorianCalendar\n7.FindMonthlyPayment\n8.FindElapsedTime\n9.SwapNibbles\n10.FindFewestNotes\n11.ComputeSqrtOfNonnegativeNumber\n12.DecimalToBinayRepresentation\n13.Exit\n");
+            Console.WriteLine("1.FindFibonacciSeries\n2.CheckPerfectNumber\n3.CheckPrimeNumber\n4.ReverseNumber\n5.TemperaturConversion\n6.GregorianCalendar\n7.FindMonthlyPayment\n8.FindElapsedTime\n9.SwapNibbles\n10.FindFewestNotes\n11.ComputeSqrtOfNonnegativeNumber\n12.DecimalToBinayRepresentation\n13.FindRandomNumNeedToGenerateCouponNumber\n14.Exit\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -62,6 +62,10 @@ namespace LogicalPrograms
                     BinaryRepresentation.DecToBinary();
                     break;
                 case 13:
+                    Console.Clear();
+                    CouponNumbers.FindRandomNumNeedToGenerateCouponNumber();
+                    break;
+                case 14:
                     Console.Clear();
                     break;
                 default:
